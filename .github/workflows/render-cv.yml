@@ -27,23 +27,24 @@ jobs:
           pip install -r requirements.txt
       - name: RenderCV
         run: |
-          cv_file=$(find _data  -maxdepth 1 -type f \( -name "cv.yaml" -o -name "cv.yml" \))
+          # requirements.txt pins rendercv[full]==1.18: _data/cv.yml (and the al_folio_cv
+          # gem's Liquid CV page, which reads cv.label/cv.address.*/cv.image directly) use
+          # RenderCV's older data schema. The current rendercv (2.x) renamed/removed those
+          # fields and its `--settings <file>` flag expects a v2.x-shaped settings file, which
+          # `assets/rendercv/settings.yaml` (also v2.x-shaped) isn't valid input for v1.18 —
+          # confirmed locally, hence no --settings/--design here. See requirements.txt.
+          cv_file=$(find _data -maxdepth 1 -type f \( -name "cv.yaml" -o -name "cv.yml" \))
           if [ -z "$cv_file" ]; then
             echo "No cv.yml file found!"
             exit 1
           fi
-          rendercv_dir=$(find assets -maxdepth 1 -type d -name "rendercv")
-          if [ -z "$rendercv_dir" ]; then
-            echo "No RenderCV config directory found!"
-            exit 1
-          fi
-          settings=$(find $rendercv_dir -maxdepth 1 -type f \( -name "settings.yaml" -o -name "settings.yml" \))
-          if [ -z "$settings" ]; then
-            echo "Missing RenderCV config file!"
-            exit 1
-          fi
-          rendercv render $cv_file --settings $settings
-          rm assets/rendercv/rendercv_output/*.typ
+          # Must match _pages/cv.md's cv_pdf front matter — update both together.
+          pdf_path="assets/rendercv/rendercv_output/Kaleb_Irahola-Azad_CV.pdf"
+          rendercv render "$cv_file" --pdf-path "$pdf_path" --dont-generate-markdown --dont-generate-png
+          # v1.18 has no --output-folder equivalent, so it always also writes the LaTeX
+          # build (.tex/.log/.aux/__pycache__) to a default ./rendercv_output/ next to the
+          # repo root — clean that up, the real PDF is already at $pdf_path.
+          rm -rf rendercv_output
       - name: Upload rendercv_output as an artifact
         uses: actions/upload-artifact@v4
         with:

@@ -4,7 +4,7 @@ title: project 8
 description: an other project with a background image and giscus comments
 img: assets/img/9.jpg
 importance: 2
-category: work
+category: hidden # not one of the 4 real projects; kept out of display_categories: [work] in _pages/projects.md rather than deleted, per user choice
 giscus_comments: true
 ---
 

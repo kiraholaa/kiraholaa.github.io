@@ -1,4 +1,11 @@
 nbconvert
 pyyaml
-rendercv[full]
+# Pinned: the site's _data/cv.yml (and the al_folio_cv gem's Liquid CV page, which
+# reads cv.label/cv.address.*/cv.image directly) use RenderCV's OLDER data schema.
+# The current rendercv (2.x) renamed/removed those fields (label->headline, no more
+# address object, image->photo) and validation fails outright — confirmed locally.
+# .github/workflows/render-cv.yml's `rendercv render ... --settings assets/rendercv/settings.yaml`
+# also targets the 2.x settings/CLI shape, so it will fail as currently written even
+# with this pin; that workflow needs a matching update, not done here.
+rendercv[full]==1.18
 scholarly

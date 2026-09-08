@@ -1,0 +1,55 @@
+<!--
+  Local override of al_folio_core's _includes/projects.liquid (docs/ARCHITECTURE.md
+  #local-overrides-your-site-vs-this-repo). Structure below is otherwise identical to
+  the gem's 1.0.15 version — the only addition is the accent-* class + inline
+  border-left color, driven by the `accent` front matter field (thesis | cpr | teaching),
+  per design-system.md's "sistema de acentos por proyecto". Card background is untouched.
+-->
+{% assign accent_hex = "" %}
+{% case project.accent %}
+{% when "thesis" %}
+  {% assign accent_hex = "#b5651d" %}
+{% when "cpr" %}
+  {% assign accent_hex = "#6e2a34" %}
+{% when "teaching" %}
+  {% assign accent_hex = "#a9862f" %}
+{% endcase %}
+
+<div class="col">
+  <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
+    <div
+      class="card h-100 hoverable project-card{% if project.accent %} accent-{{ project.accent }}{% endif %}"
+      {% if accent_hex != "" %}style="border-left: 4px solid {{ accent_hex }};"{% endif %}
+    >
+      {% if project.img %}
+        {%
+          include figure.liquid
+          loading="eager"
+          path=project.img
+          sizes = "250px"
+          alt="project thumbnail"
+          class="card-img-top"
+        %}
+      {% endif %}
+      <div class="card-body">
+        <h2 class="card-title">{{ project.title }}</h2>
+        <p class="card-text">{{ project.description }}</p>
+        <div class="row ml-1 mr-1 p-0">
+          {% if project.github %}
+            <div class="github-icon">
+              <div class="icon" data-toggle="tooltip" title="Code Repository">
+                <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
+              </div>
+              {% if project.github_stars %}
+                <span class="stars" data-toggle="tooltip" title="GitHub Stars">
+                  <i class="fa-solid fa-star"></i>
+                  <span id="{{ project.github_stars }}-stars"></span>
+                </span>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </a>
+</div>

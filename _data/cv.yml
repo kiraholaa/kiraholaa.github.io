@@ -1,189 +1,212 @@
+# Translated and expanded from cv.tex (source CV, kept out of the Jekyll build
+# via _config.yml exclude:) plus the activities/teaching items given directly in
+# chat that aren't in cv.tex yet. Update cv.tex too, next time it's revised, so
+# this file doesn't drift from the source of truth.
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Kaleb Irahola-Azad
+  label: PhD Student, Industrial Engineering
+  email: kaleb.irahola.a@mail.pucv.cl
+  phone: "+56 950532667"
+  location: Viña del Mar, Chile
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: >
+    Mechatronics engineer focused on the design and management of technology
+    projects that connect the university with the productive sector and the
+    local environment. Promotes robotics, automation, and applied R&D&I as
+    tools to build critical talent and deliver concrete solutions to real
+    problems. Currently a PhD student in Industrial Engineering at PUCV,
+    working on Digital Twin implementation in port logistics.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
+      username: kiraholaa
 
   address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+    street: Calle Álvarez 1822
+    city: Viña del Mar
+    countryCode: CL
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
-        highlights:
-          - Description 1.
-          - Description 2.
+      - institution: Universidad Internacional de La Rioja (UNIR)
+        location: Mexico City, Mexico
+        area: Technology Project Design and Management
+        studyType: Master's
+        end_date: 2024-07-31
+        score: "8.78/10.0"
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
+      - institution: Universidad Católica Boliviana San Pablo
+        location: Tarija, Bolivia
+        area: Mechatronics Engineering
+        studyType: Bachelor's
+        end_date: 2020-09-25
+        score: "92.94/100.0 — graduated with honors"
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: Pontificia Universidad Católica de Valparaíso (PUCV)
+        position: PhD Student / Researcher, School of Industrial Engineering
+        location: Valparaíso, Chile
+        start_date: 2026-03
+        end_date: present
         highlights:
-          - Relativity
-          - Description 2.
+          - PhD student and researcher in the School of Industrial Engineering.
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      # --- New teaching/advising items (2026), not yet in cv.tex ---
+      - company: ESAM (Bolivia)
+        position: "Instructor — Learning Models in Educational Robotics (Specialization in Robotics and Programming Applied to Education)"
+        location: Bolivia
+        start_date: 2026
+        end_date: 2026
+
+      - company: Universidad Católica Boliviana San Pablo
+        position: "Instructor — Methodological Workshop I (Master's in Engineering and Supply Chain Management)"
+        location: Tarija, Bolivia
+        start_date: 2026
+        end_date: 2026
+
+      - company: Universidad de Buenos Aires (UBA), Facultad de Ingeniería
+        position: "Thesis Advisor — Master's in Embedded Artificial Intelligence"
+        location: Argentina
+        start_date: 2026
+        end_date: 2026
+        summary: >
+          Advisor for the thesis "Secure virtual assistant for internal information
+          management with voice authentication" by Esp. Ing. Elmer Alan Cornejo Quito.
+
+      - company: Universidad Católica Boliviana San Pablo
+        position: Full-time Lecturer, Mechatronics Engineering
+        location: Tarija, Bolivia
+        start_date: 2022-02
+        end_date: 2026-01
         highlights:
-          - Description 1.
-          - Description 2.
+          - Taught 34 semester-long courses and 2 modular undergraduate courses in Mechatronics Engineering, covering robotics, industrial automation, instrumentation, electronics, mathematics, and project management.
+          - Supervised, advised, and monitored undergraduate thesis work for 33 Mechatronics Engineering students.
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
+    # Rendered as its own separate card — not merged into Experience — via the local
+    # override _includes/cv/render.liquid (which also makes the website follow the
+    # cv.sections order below, matching the PDF, instead of al_folio_cv's default of
+    # always hoisting "Experience" to the top of the page).
+    Activities:
+      # --- New items, not yet in cv.tex ---
+      - company: INFORMS Student Chapter, School of Industrial Engineering (EII)
+        position: Vice President
+        location: PUCV, Valparaíso, Chile
+        start_date: 2026
+        end_date: present
 
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
+      - company: Laboratorio de Sistemas de Transporte Inteligente (LSTI)
+        position: Member
+        location: PUCV, Valparaíso, Chile
+        start_date: 2026
+        end_date: present
 
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      # --- From cv.tex "Liderazgo y Actividades" ---
+      - company: Universidad Católica Boliviana San Pablo
+        position: Full-time Lecturer, Mechatronics Engineering
+        location: Tarija, Bolivia
+        start_date: 2022-02
+        end_date: 2026-01
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - Led the curricular redesign of the Mechatronics Engineering program for the 2025 study plan.
+          - Led the self-evaluation committee for program accreditation before Bolivia's Executive Committee of Universities (CEUB), and executed the resulting improvement plan.
+          - Led the redesign and modernization of the Automation and Robotics lab infrastructure and usage guides, standardizing practices, safety protocols, and evaluation criteria.
+          - Coordinated the project "Bolivian Sign Language to Oral Communication Translator."
+          - Collaborated on the "Ecotintes" project, revaluing Misión-Guaraní culture in the Chimeo community through textile applications.
+          - Drove the transfer of undergraduate thesis projects to the productive sector and municipal incubators, securing seed capital and coordinating with local stakeholders.
 
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+      - company: OCEPB National Academic Committee
+        position: Departmental Coordinator — Robotics Area
+        location: Tarija, Bolivia
+        start_date: 2022
+        end_date: 2025
+        highlights:
+          - Organized the departmental stage of the robotics area of the Bolivian Plurinational Student Science Olympiad, coordinating teacher/student training and leading technical evaluation of teams.
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+      - company: Startup Weekend Bolivia
+        position: Winner, "Tech" category
+        location: El Alto, Bolivia
+        start_date: 2016
+        end_date: 2016
+        highlights:
+          - Won Startup Weekend Bolivia and competed in the Global Startup Battle with the project AlertaUV.
 
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
-
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - company: 8th International Olympiad on Astronomy and Astrophysics
+        position: Bolivia's Representative
+        location: Suceava, Romania
+        start_date: 2014
+        end_date: 2014
+        highlights:
+          - Sole representative of Bolivia at the 8th International Olympiad on Astronomy and Astrophysics.
 
     Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
+      - name: Diploma in Data Analysis with Artificial Intelligence
+        issuer: Universidad Católica Boliviana San Pablo (online)
+        date: 2026
 
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
+      - name: Diploma in Higher Education
+        issuer: Universidad Amazónica de Pando (online), Cobija, Bolivia
+        date: 2024-04
 
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
+      - name: Diploma in Audit, Evaluation, and Legislation of Technology Projects
+        issuer: Universidad Internacional de La Rioja (online), Mexico City, Mexico
+        date: 2023-11
 
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+      - name: Diploma in Project Management
+        issuer: Universidad Internacional de La Rioja (online), Mexico City, Mexico
+        date: 2023-05
 
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: Diploma in Technological Innovation
+        issuer: Universidad Internacional de La Rioja (online), Mexico City, Mexico
+        date: 2022-11
 
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: Course in Scientific Research with Artificial Intelligence
+        issuer: Universidad Católica Boliviana San Pablo (online)
+        date: 2025-07
+
+      - name: Course in Evaluation and Accreditation of Academic Program Quality
+        issuer: Universidad Católica Boliviana San Pablo (hybrid), La Paz, Bolivia
+        date: 2023-07
+
+      - name: Course in Machine Learning with Python
+        issuer: Universidad Católica Boliviana San Pablo (online)
+        date: 2023-06
+
+      - name: Specialization Course in Automation and Control with Schneider Electric
+        issuer: Ideas Automatitation (online), Cochabamba, Bolivia
+        date: 2020-04
+
+    Skills:
+      - name: Programming & tools
+        keywords: "Python (data analysis), ROS 2, Linux/Ubuntu, LaTeX, Git & GitHub, Microsoft 365"
+
+      - name: Quantitative methods
+        keywords: "Quantitative analysis methods"
+
+      - name: CAD & prototyping
+        keywords: "CAD design and simulation, rapid prototyping"
+
+      - name: Industrial automation & instrumentation
+        keywords: "PLCs, HMI systems, basic industrial networks"
+
+      - name: Electronics
+        keywords: "Analog and digital electronics"
+
+      - name: Embedded systems
+        keywords: "Embedded systems and microcontrollers"
+
+    Languages:
+      - name: Spanish
+        summary: "Native"
+
+      - name: English
+        summary: "Basic"
+
+      - name: Portuguese
+        summary: "Basic"
+
+    Interests:
+      - name: Research interests
+        keywords: "Digital Twin, Port logistics, Interpretable AI, IoT, Sensing, Data Science"
+
+      - name: General interests
+        keywords: "Technology projects for regional development, complex systems, mathematical models, systems analysis and optimization, engineering education and active learning, science outreach activities"

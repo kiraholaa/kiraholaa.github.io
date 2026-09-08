@@ -4,7 +4,7 @@ title: project 6
 description: a project with no image
 img:
 importance: 4
-category: fun
+category: hidden # not one of the 4 real projects; kept out of display_categories: [work] in _pages/projects.md rather than deleted, per user choice
 ---
 
 Every project has a beautiful feature showcase page.

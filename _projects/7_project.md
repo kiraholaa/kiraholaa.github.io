@@ -4,7 +4,7 @@ title: project 7
 description: with background image
 img: assets/img/4.jpg
 importance: 1
-category: work
+category: hidden # not one of the 4 real projects; kept out of display_categories: [work] in _pages/projects.md rather than deleted, per user choice
 related_publications: true
 ---
 

@@ -1,0 +1,82 @@
+/*******************************************************************************
+ * Local override of al_folio_core's _sass/_variables.scss (docs/CUSTOMIZE.md
+ * #changing-theme-color). Sass `@use "variables"` resolves to whichever file is
+ * found first on the load path, so this file REPLACES the gem's entirely —
+ * every name the gem's other partials reference ($red-color, $grey-color-dark,
+ * $fa-font-path, $back-to-top-*, $max-content-width, etc.) must stay defined
+ * here too, or those partials fail to compile. Keep the gem's originals as-is
+ * and only ADD the design-system.md palette below; don't rename/remove the rest.
+ ******************************************************************************/
+
+@use "sass:color";
+
+// --- Everything below this line is unchanged from al_folio_core 1.0.15, so
+// --- other gem partials that `@use "variables" as v` keep working. ---
+
+// Colors
+$red-color: #ff3636 !default;
+$red-color-dark: #b71c1c !default;
+$orange-color: #f29105 !default;
+$blue-color: #0076df !default;
+$blue-color-dark: #00369f !default;
+$cyan-color: #2698ba !default;
+$light-cyan-color: color.adjust($cyan-color, $lightness: 25%);
+$green-color: #00ab37 !default;
+$green-color-lime: #b7d12a !default;
+$green-color-dark: #009f06 !default;
+$green-color-light: #ddffdd !default;
+$green-color-bright: #11d68b !default;
+$purple-color: #b509ac !default;
+$light-purple-color: color.adjust($purple-color, $lightness: 25%);
+$pink-color: #f92080 !default;
+$pink-color-light: #ffdddd !default;
+$yellow-color: #efcc00 !default;
+
+$grey-color: #828282 !default;
+$grey-color-light: color.adjust($grey-color, $lightness: 40%);
+$grey-color-dark: #1c1c1d;
+$grey-900: #212529;
+
+$white-color: #ffffff !default;
+$black-color: #000000 !default;
+
+// Theme colors
+
+$code-bg-color-light: rgba($purple-color, 0.05);
+$code-bg-color-dark: #2c3237 !default;
+
+// Font awesome location
+$fa-font-path: "../webfonts";
+
+// Back To Top button config
+$back-to-top-z-index: 10;
+$back-to-top-bottom: 30px;
+$back-to-top-right: 30px;
+$back-to-top-diameter: 40px;
+$back-to-top-height: $back-to-top-diameter;
+$back-to-top-width: $back-to-top-diameter;
+
+// Max width default
+$max-content-width: 930px !default;
+
+// --- design-system.md palette (added locally) ---
+
+// Base palette (fixed — does not change between sections/projects)
+$color-bg-primary: #0a121c !default; // Ink Black — hero / section entry points
+$color-bg-secondary: #221f16 !default; // Carbon Black — cards / reading surfaces
+$color-text-primary: #f2efe6 !default; // Soft Linen
+$color-text-secondary: #9a9587 !default; // Grey Olive
+$color-accent-nav: #b5651d !default; // Copperwood — general nav accent (also thesis anchor)
+
+// Thesis (PhD) — Copperwood family. Papers 1-4 are not yet defined (see
+// content-summary.md); when they are, assign each a variant below instead of a new color.
+$color-accent-thesis: #b5651d !default; // Copperwood (anchor)
+$color-accent-thesis-light: #d6884c !default; // Copper Light
+$color-accent-thesis-deep: #8a4a16 !default; // Copper Deep
+$color-accent-thesis-muted: #a9855f !default; // Copper Muted
+
+// CPR simulator — separate line
+$color-accent-cpr: #6e2a34 !default; // Dried Wine
+
+// Teaching / postgrad (UCB) — separate line
+$color-accent-teaching: #a9862f !default; // Old Gold

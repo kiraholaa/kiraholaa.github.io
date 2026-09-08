@@ -2,25 +2,25 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+title: Kaleb Irahola-Azad # set explicitly (published name, per content-summary.md) instead of relying on first/middle/last concatenation
+first_name: Kaleb
+middle_name: ""
+last_name: Irahola-Azad
+contact_note: # removed for now, per request — will add a specific line later
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  PhD student in Industrial Engineering at Pontificia Universidad Católica de Valparaíso (PUCV), member of the
+  Laboratorio de Sistemas Inteligentes de Transporte. Working on Digital Twin implementation in port logistics
+  and interpretable-by-design AI for smart gate coordination.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: digital twin, port logistics, interpretable AI, IoT, sensing, data science # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
 
-url: https://alshedivat.github.io # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/. Leave blank for root
+url: https://kiraholaa.github.io # the base hostname & protocol for your site
+baseurl: # personal/organization site (username.github.io) — must stay blank, not a project-page subpath; see docs/ARCHITECTURE.md#3-this-repos-effective-baseurl-is-al-folio
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
@@ -234,6 +234,7 @@ exclude:
   - al-folio-upgrade-report.md
   - bin/
   - CLAUDE.md
+  - docs-internal/
   - Dockerfile
   - docker-compose.yml
   - docker-compose-slim.yml
