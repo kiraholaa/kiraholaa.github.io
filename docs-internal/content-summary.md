@@ -12,11 +12,11 @@ inicial al pedirle a Claude Code que trabaje en el repo.
 
 ## Correos por plataforma
 
-| Plataforma       | Correo usado                          | Razón                                      |
-|-------------------|----------------------------------------|----------------------------------------------|
-| ORCID             | institucional PUCV                    | Verificación de afiliación                   |
-| Google Scholar    | cuenta creada con Gmail personal (`k.irahola.a@gmail.com`), verificada con correo institucional `kaleb.irahola.a@mail.pucv.cl` | Personal = permanente; institucional solo verifica afiliación actual |
-| GitHub            | Gmail personal (`k.irahola.a@gmail.com`) | Cuenta permanente, no atada a ninguna institución |
+| Plataforma     | Correo usado                                                                                                                   | Razón                                                                |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
+| ORCID          | institucional PUCV                                                                                                             | Verificación de afiliación                                           |
+| Google Scholar | cuenta creada con Gmail personal (`k.irahola.a@gmail.com`), verificada con correo institucional `kaleb.irahola.a@mail.pucv.cl` | Personal = permanente; institucional solo verifica afiliación actual |
+| GitHub         | Gmail personal (`k.irahola.a@gmail.com`)                                                                                       | Cuenta permanente, no atada a ninguna institución                    |
 
 ## ORCID — contenido ya cargado
 
@@ -73,12 +73,12 @@ inicial al pedirle a Claude Code que trabaje en el repo.
 
 ## Contenido ya definido para tarjetas de proyecto
 
-| Proyecto                          | Categoría   | Acento asignado          |
-|-------------------------------------|--------------|-----------------------------|
-| Smart gate model (interpretable AI) | Tesis        | Familia Copperwood          |
-| Digital twin data layer             | Tesis        | Familia Copperwood          |
-| CPR simulator (hardware/firmware)   | Rama aparte  | Dried Wine (`#6e2a34`)      |
-| Docencia / postgrado (UCB)          | Rama aparte  | Old Gold (`#a9862f`)        |
+| Proyecto                            | Categoría   | Acento asignado        |
+| ----------------------------------- | ----------- | ---------------------- |
+| Smart gate model (interpretable AI) | Tesis       | Familia Copperwood     |
+| Digital twin data layer             | Tesis       | Familia Copperwood     |
+| CPR simulator (hardware/firmware)   | Rama aparte | Dried Wine (`#6e2a34`) |
+| Docencia / postgrado (UCB)          | Rama aparte | Old Gold (`#a9862f`)   |
 
 Los papers específicos de la tesis (3–4, uno por objetivo específico) están
 pendientes de definir con detalle — cuando estén claros sus títulos, se

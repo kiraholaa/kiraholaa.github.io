@@ -11,11 +11,13 @@ paso de Jekyll sin haber terminado el de Ruby.
       `sudo apt install -y ruby-full build-essential zlib1g-dev`
 - [ ] Configurar que los gems se instalen en tu carpeta de usuario (evita
       problemas de permisos con `sudo gem install`):
-      ```
-      echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
-      echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
-      source ~/.bashrc
-      ```
+
+  ```
+  echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
+  echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
+  source ~/.bashrc
+  ```
+
 - [ ] Instalar Bundler y Jekyll: `gem install bundler jekyll`
 - [ ] Verificar instalación: `jekyll -v` y `bundle -v` deben responder con
       un número de versión, sin errores.
@@ -43,11 +45,11 @@ paso de Jekyll sin haber terminado el de Ruby.
 
 ## 4. Primer prompt a Claude Code
 
-- [ ] Pedirle algo como: *"Lee design-system.md y content-summary.md.
+- [ ] Pedirle algo como: _"Lee design-system.md y content-summary.md.
       Aplica la paleta de colores a los archivos SCSS del theme
       (probablemente en `_sass/`), y ayúdame a estructurar las páginas
       Home, Research/Projects, CV y Contact según lo descrito en
-      content-summary.md."*
+      content-summary.md."_
 - [ ] Revisar qué archivos modificó antes de aceptar los cambios (Claude
       Code te muestra el diff).
 

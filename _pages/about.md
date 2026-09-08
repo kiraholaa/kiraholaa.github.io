@@ -12,8 +12,9 @@ profile:
     <p>Laboratorio de Sistemas de Transporte Inteligente (LSTI)</p>
     <p>PUCV, Valparaíso, Chile</p>
 
-selected_papers: false # no real papers yet — _bibliography/papers.bib example entries were removed;
-                        # flip back to true once there's a real paper marked selected: true
+selected_papers:
+  false # no real papers yet — _bibliography/papers.bib example entries were removed;
+  # flip back to true once there's a real paper marked selected: true
 social: true # includes social icons at the bottom of the page
 
 announcements:

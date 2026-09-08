@@ -5,21 +5,23 @@
   border-left color, driven by the `accent` front matter field (thesis | cpr | teaching),
   per design-system.md's "sistema de acentos por proyecto". Card background is untouched.
 -->
-{% assign accent_hex = "" %}
+{% assign accent_hex = '' %}
 {% case project.accent %}
-{% when "thesis" %}
-  {% assign accent_hex = "#b5651d" %}
-{% when "cpr" %}
-  {% assign accent_hex = "#6e2a34" %}
-{% when "teaching" %}
-  {% assign accent_hex = "#a9862f" %}
+  {% when 'thesis' %}
+    {% assign accent_hex = '#b5651d' %}
+  {% when 'cpr' %}
+    {% assign accent_hex = '#6e2a34' %}
+  {% when 'teaching' %}
+    {% assign accent_hex = '#a9862f' %}
 {% endcase %}
 
 <div class="col">
   <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
     <div
       class="card h-100 hoverable project-card{% if project.accent %} accent-{{ project.accent }}{% endif %}"
-      {% if accent_hex != "" %}style="border-left: 4px solid {{ accent_hex }};"{% endif %}
+      {% if accent_hex != '' %}
+        style="border-left: 4px solid {{ accent_hex }};"
+      {% endif %}
     >
       {% if project.img %}
         {%

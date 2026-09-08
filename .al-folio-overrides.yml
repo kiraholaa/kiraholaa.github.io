@@ -7,18 +7,18 @@ overrides:
     upstream_path: _includes/projects.liquid
     upstream_sha256: b824fbc63e1fe9cda6280f482ec51db4e6fcbfbbf4e27f55e728664dab9d4f6e
     local_sha256: 347479b66f0ec17966567b5e14f7c086f3eff416c6e1b5d5d557a98fe5ba2dd6
-    acknowledged_at: '2026-09-07'
+    acknowledged_at: "2026-09-07"
   _sass/_themes.scss:
     owner: al_folio_core
     gem_version: 1.0.15
     upstream_path: _sass/_themes.scss
     upstream_sha256: b581e43dcfbf21c14f388e2b585474c886fad62f6b5a0444f7832e7f69745f1f
     local_sha256: a06a29e9a4d3531c5cf65849c5154e8dbae25e326c43c70f546293c77b265b23
-    acknowledged_at: '2026-09-07'
+    acknowledged_at: "2026-09-07"
   _sass/_variables.scss:
     owner: al_folio_core
     gem_version: 1.0.15
     upstream_path: _sass/_variables.scss
     upstream_sha256: 8a6b3e6a2dfcda6c7973dc7b19872f02d66d6c78bac677fc2dff0e272b3ebc84
     local_sha256: 780eab8d3c5e368e4ada4c01acd6b28b5760cd7db38a1a173a15e5e3bc9a1076
-    acknowledged_at: '2026-09-07'
+    acknowledged_at: "2026-09-07"

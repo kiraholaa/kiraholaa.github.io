@@ -12,13 +12,13 @@ Fuente original de la paleta: export de Coolors (CSV/JSON guardado en
 Estos 5 colores son el esqueleto visual de todo el sitio — fondo, superficie,
 texto. No se reasignan a proyectos específicos.
 
-| Nombre       | Hex       | Rol                                              | Variable SCSS sugerida     |
-|--------------|-----------|---------------------------------------------------|------------------------------|
-| Ink Black    | `#0a121c` | Fondo primario (hero, encabezados de sección)     | `$color-bg-primary`         |
-| Carbon Black | `#221f16` | Fondo secundario (tarjetas, contenido)            | `$color-bg-secondary`       |
-| Soft Linen   | `#f2efe6` | Texto principal sobre fondo oscuro                | `$color-text-primary`       |
-| Grey Olive   | `#9a9587` | Texto secundario, metadatos, descripciones        | `$color-text-secondary`     |
-| Copperwood   | `#b5651d` | Acento general de navegación (links, hover, título) — también ancla de la familia "Tesis" | `$color-accent-nav` |
+| Nombre       | Hex       | Rol                                                                                       | Variable SCSS sugerida  |
+| ------------ | --------- | ----------------------------------------------------------------------------------------- | ----------------------- |
+| Ink Black    | `#0a121c` | Fondo primario (hero, encabezados de sección)                                             | `$color-bg-primary`     |
+| Carbon Black | `#221f16` | Fondo secundario (tarjetas, contenido)                                                    | `$color-bg-secondary`   |
+| Soft Linen   | `#f2efe6` | Texto principal sobre fondo oscuro                                                        | `$color-text-primary`   |
+| Grey Olive   | `#9a9587` | Texto secundario, metadatos, descripciones                                                | `$color-text-secondary` |
+| Copperwood   | `#b5651d` | Acento general de navegación (links, hover, título) — también ancla de la familia "Tesis" | `$color-accent-nav`     |
 
 **Por qué Ink Black vs. Carbon Black:** Ink Black (más frío/oscuro) marca las
 zonas de "entrada" a una sección — el ojo se detiene ahí primero. Carbon
@@ -40,25 +40,25 @@ Ancla: `Copperwood #b5651d`. Cada paper/objetivo específico usa una
 variación de tono (más claro, más oscuro, más apagado) dentro de la misma
 familia, no un color distinto.
 
-| Paper / objetivo específico       | Nombre           | Hex       | Relación con el ancla       |
-|------------------------------------|------------------|-----------|-------------------------------|
-| (paraguas / identidad general)     | Copperwood       | `#b5651d` | Color base de la familia      |
-| Paper 1 — *(pendiente de definir)* | Copper Light     | `#d6884c` | Tinte más claro                |
-| Paper 2 — *(pendiente de definir)* | Copper Deep      | `#8a4a16` | Sombra más oscura              |
-| Paper 3 — *(pendiente de definir)* | Copper Muted     | `#a9855f` | Versión más desaturada         |
-| Paper 4 — *(si aplica)*            | *(por definir)*  | —         | Siguiente variación en la misma familia |
+| Paper / objetivo específico        | Nombre          | Hex       | Relación con el ancla                   |
+| ---------------------------------- | --------------- | --------- | --------------------------------------- |
+| (paraguas / identidad general)     | Copperwood      | `#b5651d` | Color base de la familia                |
+| Paper 1 — _(pendiente de definir)_ | Copper Light    | `#d6884c` | Tinte más claro                         |
+| Paper 2 — _(pendiente de definir)_ | Copper Deep     | `#8a4a16` | Sombra más oscura                       |
+| Paper 3 — _(pendiente de definir)_ | Copper Muted    | `#a9855f` | Versión más desaturada                  |
+| Paper 4 — _(si aplica)_            | _(por definir)_ | —         | Siguiente variación en la misma familia |
 
 ### Simulador CPR — rama aparte
 
-| Nombre        | Hex       | Rol                                   |
-|---------------|-----------|-----------------------------------------|
-| Dried Wine    | `#6e2a34` | Acento del proyecto CPR simulator      |
+| Nombre     | Hex       | Rol                               |
+| ---------- | --------- | --------------------------------- |
+| Dried Wine | `#6e2a34` | Acento del proyecto CPR simulator |
 
 ### Docencia / postgrado (UCB) — rama aparte
 
-| Nombre        | Hex       | Rol                                                          |
-|---------------|-----------|----------------------------------------------------------------|
-| Old Gold      | `#a9862f` | Acento de la rama de docencia — referencia mate al amarillo institucional de UCB |
+| Nombre   | Hex       | Rol                                                                              |
+| -------- | --------- | -------------------------------------------------------------------------------- |
+| Old Gold | `#a9862f` | Acento de la rama de docencia — referencia mate al amarillo institucional de UCB |
 
 ## Reglas para agregar un color nuevo
 
