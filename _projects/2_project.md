@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Digital twin data layer
-description: Data capture and fusion layer feeding the interpretable AI model for port logistics.
-img: assets/img/3.jpg
+description: "Current research line: data capture and fusion layer feeding the interpretable AI model for port logistics."
+img: assets/img/projects/digital-twin-diagram.svg
 importance: 2
 category: research
 accent: thesis

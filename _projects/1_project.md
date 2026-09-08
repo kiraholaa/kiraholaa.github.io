@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Smart gate model (interpretable AI)
-description: Interpretable-by-design AI model for coordinating landside truck flow at smart gates.
-img: assets/img/12.jpg
+description: "Current research line: interpretable-by-design AI model for coordinating landside truck flow at smart gates."
+img: assets/img/projects/smart-gate-diagram.svg
 importance: 1
 category: research
 accent: thesis

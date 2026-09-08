@@ -4,7 +4,7 @@ title: Teaching — Universidad Católica Boliviana (UCB)
 description: Postgraduate teaching, Universidad Católica Boliviana San Pablo, Tarija.
 img:
 importance: 4
-category: other
+category: hidden # this is employment, not a project — already covered under Experience/CV; kept but not listed
 accent: teaching
 ---
 
