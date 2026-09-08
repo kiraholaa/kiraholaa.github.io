@@ -27,20 +27,30 @@ cv:
     countryCode: CL
 
   sections:
+    # `date:` (not `end_date:`) because these are single graduation dates, not a
+    # range with a known start — and it's the field al_folio_cv's education.liquid
+    # actually falls back to for a lone date; `end_date:` alone rendered no date
+    # badge at all on the website (rendercv's own PDF renderer is more lenient and
+    # showed it fine, which is why this only broke the website). `degree:` (not
+    # `studyType:`) because that's rendercv's real EducationEntry field name —
+    # `studyType` isn't recognized by rendercv and was silently dropped from the
+    # PDF (the website template happens to accept either name).
     Education:
       - institution: Universidad Internacional de La Rioja (UNIR)
         location: Mexico City, Mexico
         area: Technology Project Design and Management
-        studyType: Master's
-        end_date: 2024-07-31
-        score: "8.78/10.0"
+        degree: Master's
+        date: 2024-07-31
+        highlights:
+          - "GPA: 8.78/10.0"
 
       - institution: Universidad Católica Boliviana San Pablo
         location: Tarija, Bolivia
         area: Mechatronics Engineering
-        studyType: Bachelor's
-        end_date: 2020-09-25
-        score: "92.94/100.0 — graduated with honors"
+        degree: Bachelor's
+        date: 2020-09-25
+        highlights:
+          - "GPA: 92.94/100.0 — graduated with honors"
 
     Experience:
       - company: Pontificia Universidad Católica de Valparaíso (PUCV)

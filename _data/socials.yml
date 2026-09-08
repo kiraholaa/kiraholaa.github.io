@@ -6,7 +6,7 @@
 # confirmed there, not guessed): keeping only email, cv_pdf, orcid_id, scholar_userid,
 # linkedin_username. Dropped rss_icon (no active blog) and the leftover example
 # custom_social/inspirehep_id (those were what rendered as a stray icon before).
-email: k.irahola.a@gmail.com
+email: kaleb.irahola.a@mail.pucv.cl
 cv_pdf: /assets/rendercv/rendercv_output/Kaleb_Irahola-Azad_CV.pdf
 orcid_id: 0009-0003-4314-2244
 scholar_userid: 6ds6VqYAAAAJ

@@ -3,7 +3,7 @@ layout: page
 title: contact
 permalink: /contact/
 description: Get in touch.
-nav: true
+nav: false # contact info now lives on About (social icons); page kept, just not linked
 nav_order: 4
 ---
 
@@ -19,7 +19,7 @@ in the CPR simulator project or my teaching.
 
 The fastest way to reach me is by email:
 
-<p><a href="mailto:k.irahola.a@gmail.com">k.irahola.a@gmail.com</a></p>
+<p><a href="mailto:kaleb.irahola.a@mail.pucv.cl">kaleb.irahola.a@mail.pucv.cl</a></p>
 
 You can also find links to ORCID, Google Scholar, and GitHub in the site
 footer below.
