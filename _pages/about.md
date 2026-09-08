@@ -9,8 +9,8 @@ profile:
   image: Perfil_KIA.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Laboratorio de Sistemas de Transporte Inteligente (LSTI)</p>
-    <p>PUCV, Valparaíso, Chile</p>
+    <p>"All models are wrong, but some are useful."</p>
+    <p>— George E. P. Box</p>
 
 selected_papers:
   false # no real papers yet — _bibliography/papers.bib example entries were removed;
