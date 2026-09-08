@@ -1,0 +1,27 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#0a121c"/>
+
+  <!-- Manikin: head + chest outline -->
+  <circle cx="330" cy="150" r="30" fill="none" stroke="#f2efe6" stroke-width="3"/>
+  <rect x="230" y="190" width="200" height="120" rx="30" fill="none" stroke="#f2efe6" stroke-width="3"/>
+
+  <!-- Compression force arrow into the chest -->
+  <line x1="330" y1="70" x2="330" y2="185" stroke="#6e2a34" stroke-width="4"/>
+  <polygon points="330,196 320,178 340,178" fill="#6e2a34"/>
+
+  <!-- Compression depth gauge -->
+  <rect x="480" y="150" width="24" height="160" rx="4" fill="none" stroke="#9a9587" stroke-width="2"/>
+  <rect x="480" y="230" width="24" height="80" rx="4" fill="#6e2a34" opacity="0.75"/>
+  <line x1="472" y1="220" x2="512" y2="220" stroke="#f2efe6" stroke-width="2" stroke-dasharray="4 4"/>
+  <text x="480" y="140" font-family="Georgia, serif" font-size="13" fill="#9a9587">depth</text>
+
+  <!-- Real-time feedback unit -->
+  <rect x="560" y="70" width="170" height="80" rx="6" fill="none" stroke="#9a9587" stroke-width="2"/>
+  <polyline points="575,110 600,110 612,85 624,125 636,110 660,110 672,95 684,115 696,110 715,110"
+            fill="none" stroke="#6e2a34" stroke-width="2"/>
+  <text x="575" y="65" font-family="Georgia, serif" font-size="13" fill="#9a9587">real-time feedback</text>
+
+  <text x="400" y="410" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#9a9587">
+    CPR simulator — real-time compression feedback
+  </text>
+</svg>
